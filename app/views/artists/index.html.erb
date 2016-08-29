@@ -1,0 +1,13 @@
+<div class="container">
+  <% if @artists.size > 0 %>
+    <div class="row">
+	    <% @artists.each do |artist| %>
+	      <div class="col-sm-3">
+	        <div class="thumbnail">
+	         <%= image_tag(artist.image_url, class:"img-rounded")%>
+	        </div>
+	      </div>
+	    <% end %>
+	</div>
+  <% end -%>
+</div>
