@@ -1,5 +1,5 @@
 
-.thumbnail > img{
+ .index > img{
   height: 200px;
 }
 
@@ -9,4 +9,13 @@
 
   div > .btn {
    margin-bottom: 5px;
+}
+
+div > img{
+  height: 300px;
+  width: 300px;
+}
+
+div > .btn{
+  margin: 5px auto;
 }

@@ -3,13 +3,13 @@
     <div class="row">
 	    <% @artists.each do |artist| %>
 	      <div class="col-sm-3">
-	        <div class="thumbnail">
+	        <div class="thumbnail index">
 	         <%= image_tag(artist.image_url, class:"img-rounded")%>
 	           <div class="caption">
 	             <h3><%= artist.name %></h3>
 	           </div>
 	           <div>
-	             <%= link_to "Ver más" , '#', class:"btn btn-primary btn-block btn-sm"%>
+	             <%= link_to "Ver más" , artist, class:"btn btn-primary btn-block btn-sm"%>
 	           </div>
 	         </div>
 	        </div>
